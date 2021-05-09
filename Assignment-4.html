@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./scroll.css">
+</head>
+<body>
+    <header>
+        <div class="page1">
+        <h1> I am First Page</h1>
+        <p>Scroll down change the page</p>
+    </div>
+    </header>
+<section>
+<div class="page2"> 
+    <h1>This is Second  Page</h1>
+    <p>Scroll down change the page</p>
+</div>
+<script>
+    function changeBackground(){
+        if(window.scrollY>window.innerHeight/2){
+            document.body.classList.add('bgcolor');
+
+        }
+        else{
+            document.body.classList.remove('bgcolor');
+        }
+    }
+    window.addEventListener('scroll', changeBackground);
+</script>
+</section>
+
+
+
+
+</body>
+</html>

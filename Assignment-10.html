@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="demo">Total number vowels And Text Without vowels </p>
+    <script>
+
+var name = prompt("enter  Your Name Please ")
+    var count =0;
+  	function findvowel(name)
+    {
+    	var vowel = ['a','e','i','o','u','A','E','I','O','U'];
+      	for(i=0;i<name.length;i++)
+      	{
+      		if(vowel.includes(name[i]))
+        	{
+          		count++;
+        
+        document.write("" +name[i]);
+
+        	}
+      	}
+      	return count;
+    }
+    
+    document.getElementById("demo").innerHTML =" total number of vowels are " +findvowel(name);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </script>
+
+
+</body>
+</html>

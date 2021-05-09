@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>To get your Current age Click Me</h1>
+    <button onclick="myAge()">Click ME </button>
+    <p id="demo"> </p>
+    <script>
+   function myAge() {        
+  var d = new Date();
+  var current = d.getFullYear();
+  var old = prompt("enter you are Birth of the year");
+  var age=current-old;
+  document.getElementById("demo").innerHTML ="This is Your age Now " +age;
+}
+
+    </script>
+</body>
+</html>
